@@ -1,6 +1,15 @@
 @charset "UTF-8";
 
 @media screen and (min-width: 768px){
+
+    *{
+        height: 100%;
+        transition: 1ms;
+    }
+
+    main{
+        background-image: linear-gradient(to bottom, #7c8534, #95A042, #123517);
+    }
     
     .box{
         position: absolute;
@@ -9,24 +18,31 @@
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        width: 800px;
+        width: 650px;
         background-color: whitesmoke;
         border-radius: 10px;
-        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.44);
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.505);
     }
 
     .image{
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 10px;
         display: inline-block;
         position: relative;
         margin: 0;
-        width: 200px;
+        width: 280px;
         height: 300px;
     }
     
     .login{
+      position: relative;
       display: inline;
-      width: 300px;
+      width: 85%;
       height: 200px;
+      height: fit-content;
     }
 
+    .box-dados{
+        width: 80%
+    }
 }
